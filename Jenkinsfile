@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'declerative pipeline'
+                echo 'Build stage running...'  // ✅ Just prints a message
             }
         }
         stage('Test') {
             steps {
-                sh 'test'
+                echo 'Test stage running...'   // ✅ Just prints a message
             }
         }
     }
