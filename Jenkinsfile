@@ -12,9 +12,4 @@ pipeline {
             }
         }
     }
-    post {
-        failure {
-            mail to: 'team@company.com', subject: 'Build Failed'
-        }
-    }
 }
